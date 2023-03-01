@@ -2,19 +2,19 @@ import React, { useState, useEffect } from 'react';
 import Confetti from 'react-confetti';
 import './CountdownTimer.css';
 
-const CountdownTimer = () => {
+const CountdownTimer = ({ countdownDate }) => {
   const [countdown, setCountdown] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
   const [isTargetDatePassed, setIsTargetDatePassed] = useState(false);
 
   useEffect(() => {
-    const countdownDate = new Date('Mar 3, 2023 00:00:00').getTime();
+    const countdownDateObj = new Date(countdownDate).getTime();
 
     const calculateCountdown = () => {
       const now = new Date().getTime();
-      let distance = countdownDate - now;
+      let distance = countdownDateObj - now;
 
       setIsTargetDatePassed(distance < 0);
-      if (distance < 0) distance = now - countdownDate;
+      if (distance < 0) distance = now - countdownDateObj;
 
       const days = Math.abs(Math.floor(distance / (1000 * 60 * 60 * 24)));
       const hours = Math.abs(Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)));
@@ -26,7 +26,7 @@ const CountdownTimer = () => {
 
     const interval = setInterval(calculateCountdown, 1000);
     return () => clearInterval(interval);
-  }, []);
+  }, [countdownDate]);
 
   return (
     <>
