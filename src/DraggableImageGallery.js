@@ -11,6 +11,7 @@ import SunnyImage from './img/sunny.jpg';
 import PennyImage from './img/penny.png';
 import AlexisImage from './img/alexis.jpg';
 import CharlotteImage from './img/charlotte.jpg';
+import JessieImage from './img/jessie.jpg'
 
 
 const DraggableImageGallery = () => {
@@ -83,8 +84,8 @@ const DraggableImageGallery = () => {
         />
 
         <DraggableImageWithCaption
-            src="https://w7.pngwing.com/pngs/604/713/png-transparent-duck-cartoon-happy-duck-painted-animals-hand.png"
-            alt="Example Image"
+            src={JessieImage}
+            alt="Jessie Face"
             name="Jessie"
             quote="tw: imma be sappy
             you're incredibly sweet, naturally just lovely, and you've been so kind to and patient with me just so much, honestly you're wonderful ^^

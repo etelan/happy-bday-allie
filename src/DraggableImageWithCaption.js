@@ -30,7 +30,7 @@ const DraggableImageWithCaption = ({ src, alt, name, quote, initialX = 0, initia
 
   return (
     <div
-      style={{ position: 'absolute', left: position.x, top: position.y,  width: '140px' }}
+      style={{ position: 'absolute', left: position.x, top: position.y,  width: '140px',  userSelect: 'none', }}
       onMouseDown={handleMouseDown}
     >
       <img src={src} alt={alt} style={{  width: '100px' }} draggable="false" />
