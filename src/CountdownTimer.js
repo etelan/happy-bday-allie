@@ -32,7 +32,7 @@ const CountdownTimer = ({ countdownDate }) => {
     <>
       {isTargetDatePassed && <Confetti />}
       <div className="countdown-timer">
-        <p className="countdown-timer__title">{isTargetDatePassed ? 'Happy Birthday!' : 'Time until your birthday:'}</p>
+        <p className="countdown-timer__title">{isTargetDatePassed ? 'Happy Birthday!' : 'Time until your birthday'}</p>
         <div className="countdown-timer__value-container">
           {isTargetDatePassed && <div className="countdown-timer__value">{23}<span>years</span></div>}
           {Object.entries(countdown).map(([label, value]) => (
