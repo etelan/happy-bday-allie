@@ -10,6 +10,8 @@ import CamilleImage from './img/camille.jpg';
 import SunnyImage from './img/sunny.jpg';
 import PennyImage from './img/penny.png';
 import AlexisImage from './img/alexis.jpg';
+import CharlotteImage from './img/charlotte.jpg';
+
 
 const DraggableImageGallery = () => {
 
@@ -29,7 +31,7 @@ const DraggableImageGallery = () => {
             src={AlexisImage}
             alt="Alexis Face"
             name="Alexis"
-            quote="Happy Birthday my love! I can't wait to go on holiday with u xx"
+            quote="Happy Birthday my love! I can't wait to go on holiday with u xx Here is to another year of me annoying you with leekspin on the playdate :)"
             initialX={centerX - 300 + xOffset}
             initialY={centerY + rowOneOffset} 
         />
@@ -43,13 +45,11 @@ const DraggableImageGallery = () => {
             initialY={centerY + rowOneOffset}      
         />
 
-        
-
         <DraggableImageWithCaption
-            src="https://w7.pngwing.com/pngs/604/713/png-transparent-duck-cartoon-happy-duck-painted-animals-hand.png"
-            alt="Example Image"
+            src={CharlotteImage}
+            alt="Charlotte Face"
             name="Charlotte"
-            quote="n/a"
+            quote="Happy birthday Allie!! Have a lovely day, can't wait to see you again soon. Love Charlotte xxx"
             initialX={centerX + xOffset}
             initialY={centerY + rowOneOffset}
         />
