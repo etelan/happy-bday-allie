@@ -3,7 +3,7 @@ import DraggableImageGallery from './DraggableImageGallery';
 import './App.css';
 
 function App() {
-  const countdownString = 'Feb 3 2023, 00:00:00'
+  const countdownString = 'Mar 3 2023, 00:00:00'
   const countdownDate = new Date(countdownString).getTime();
 
   const isCountdownOver = () => {
